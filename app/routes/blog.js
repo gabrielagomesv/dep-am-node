@@ -19,7 +19,7 @@ module.exports = function(app) {
     var blogDAO = new app.app.models.blogDAO(connection);
 
     blogDAO.createPost(postagem, function(error, result) {
-      response.redirect("blog/index");
+      response.redirect("/blog/index");
     });
   });
 }
