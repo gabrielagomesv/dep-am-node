@@ -12,11 +12,13 @@
     <tbody>
       <tr>
         <td>Titulo</td>
+        <td>Autor</td>
         <td>Descrição</td>
       </tr>
       <% for(var i = 0; i < postagem.length; i++) { %>
         <tr>
           <td><%= postagem[i].nm_titulo %></td>
+          <td><%= postagem[i].nm_autor %></td>
           <td><%= postagem[i].ds_postagem %></td>
         </tr>
       <% } %>

@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressValidator());
 
 //Routes autoload
-consign().include('app/routes').then('app/models').then('config/db.js').into(app);
+consign().include('app/routes').then('app/models').then('config/db.js').then('app/controllers').into(app);
 
 app.set('view engine', 'ejs');
 app.set('views', './app/views');

@@ -3,3 +3,4 @@
 ## ISSUES
 
 - Importing Boostrap with CDN. Fix it by importing local.
+- Validações
