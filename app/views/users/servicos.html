@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bfy.me</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css">
+  </head>
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-118141758-1', 'auto');
+      ga('send', 'pageview');
+  </script>
+  <body>
+    <header>
+      <div class="container-header"><a class="brand" href="index.html">
+          <svg>
+            <use xlink:href="images/icons.svg#logo"></use>
+          </svg></a>
+        <input type="checkbox" id="label-login" name="login">
+        <label class="label-login" for="label-login"><span class="icon-hamburguer"></span></label>
+        <nav class="menu">
+          <ul class="menu-navegation">
+            <li class="item hidden-lg"> <a href="login.html">Entrar</a></li>
+            <li class="item servicos"><a href="#dropdown">Serviços
+                <div class="icon-arrow"></div>
+                <div id="dropdown"><a class="menu-link-dropdown" href="servicos.html">
+                     Maquiagem
+                    <svg>
+                      <use xlink:href="images/icons.svg#maquiagem"></use>
+                    </svg></a><a class="menu-link-dropdown" href="servicos.html">
+                     Massagem
+                    <svg>
+                      <use xlink:href="images/icons.svg#massagem"></use>
+                    </svg></a><a class="menu-link-dropdown" href="servicos.html">
+                     Manicure
+                    <svg>
+                      <use xlink:href="images/icons.svg#manicure"> </use>
+                    </svg></a><a class="menu-link-dropdown" href="servicos.html">
+                     Podologia
+                    <svg>
+                      <use xlink:href="images/icons.svg#podologia"></use>
+                    </svg></a><a class="menu-link-dropdown" href="servicos.html">
+                     Penteado
+                    <svg>
+                      <use xlink:href="images/icons.svg#penteado"></use>
+                    </svg></a></div></a></li>
+            <li class="item"><a href="duvidas.html">Dúvidas</a></li>
+            <li class="item"><a href="blog.php">Blog</a></li>
+            <li class="item"><a href="profissional.html">Seja um profissional</a></li>
+          </ul>
+        </nav><a class="btn btn-login" href="login.html">Entrar</a>
+      </div>
+    </header>
+    <div class="foo banner_default banner-services">
+      <section class="main-banner">
+        <h2 class="title_default title_banner">Conheça os nossos serviços de beleza</h2>
+        <h3 class="subtitle_default subtitle_banner">Há uma gama de serviços diversificados para você conhecer!</h3>
+      </section>
+    </div>
+    <section class="services">
+      <div class="wrapper-foo">
+        <div class="container">
+          <h3 class="title_default clearflex">Maquiagem</h3>
+          <h4 class="subtitle_default clearflex">Descubra nossas opções de serviço</h4>
+          <div class="services-filter">
+            <form class="services-form" action="buscar" method="GET">
+              <fieldset class="field">
+                <input class="input-form" type="search" name="buscarServico" placeholder="Digite o serviço que gostaria de buscar">
+              </fieldset>
+              <button class="btn" type="submit">Procurar</button>
+            </form>
+          </div>
+          <div class="services-box">
+            <div class="service-item">
+              <div class="service-item-details">
+                <h4 class="title">Maquiagem</h4><span class="time">45 minutos</span>
+                <p class="text">Festas de casamento, formatura ou aquela ocasião especial pedem destaque para sua beleza e a maquiagem é uma ótima forma de completar o look.</p>
+              </div>
+              <div class="service-item-price">
+                <p class="price">R$ <span>60</span></p>
+                <button class="btn"><a href="schedule.html">Agendar</a></button>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-details">
+                <h4 class="title">Maquiagem simples</h4><span class="time">45 minutos</span>
+                <p class="text">Precisa de uma maquiagem para aquela festa a fantasia ou até para uma apresentação no teatro? A maquiagem artística é perfeita para essas ocasiões.</p>
+              </div>
+              <div class="service-item-price">
+                <p class="price">R$ <span>30</span></p>
+                <button class="btn"><a href="schedule.html">Agendar</a></button>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-details">
+                <h4 class="title">Maquiagem artística</h4><span class="time">45 minutos</span>
+                <p class="text">Procedimento que utiliza pelos sintéticos para alongamento de cílios com efeito natural e duradouro. A técnica é pouco evasiva e permite que mesmo pessoas sensíveis façam.</p>
+              </div>
+              <div class="service-item-price">
+                <p class="price">R$ <span>90</span></p>
+                <button class="btn"><a href="schedule.html">Agendar</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="foo footer">
+      <div class="container">
+        <div class="brand">
+          <svg>
+            <use xlink:href="images/icons.svg#logo"></use>
+          </svg>
+        </div>
+        <div class="social">
+          <p class="description_mini">Conheça nossa plataforma e aproveite as vantagens de utilizar serviços delivery</p>
+          <div class="icons"><a class="social-link" href="#" title="Facebook"><img src="images/icons/icon-facebook.svg" alt="Facebook"></a><a class="social-link" href="#" title="Instagram"><img src="images/icons/icon-instagram.svg" alt="Instagram"></a><a class="social-link" href="#" title="Twitter"><img src="images/icons/icon-twitter.svg" alt="Twitter"></a><a class="social-link" href="#" title="Google Plus"><img src="images/icons/icon-google.svg" alt="Google Plus"></a></div><span>Bfy.me - Todos os direitos reservados 2017</span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
+  </body>
+</html>

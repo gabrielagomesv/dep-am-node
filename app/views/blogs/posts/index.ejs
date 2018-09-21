@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bfyme</title>
+</head>
+<body>
+  <h1>Teste da listagem</h1>
+  <table>
+    <tbody>
+      <tr>
+        <td>Titulo</td>
+        <td>Descrição</td>
+      </tr>
+      <% for(var i = 0; i < postagem.length; i++) { %>
+        <tr>
+          <td><%= postagem[i].nm_titulo %></td>
+          <td><%= postagem[i].ds_postagem %></td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+  <script>
+  </script>
+</body>
+</html>
