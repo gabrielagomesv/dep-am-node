@@ -6,6 +6,7 @@ var expressValidator = require('express-validator');
 //Initializing requirements
 var app = express();
 
+app.use(express.static('./app/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressValidator());
 
