@@ -8,7 +8,7 @@ module.exports.blog_create = function(app, request, response) {
   var blogDAO = new app.app.models.blogDAO(connection);
 
   blogDAO.createPost(postagem, function(error, result) {
-    response.redirect("/blog/index");
+    response.redirect("/blog");
   });
 }
 
@@ -17,6 +17,6 @@ module.exports.blog_index = function(app, request, response) {
   var blogDAO = new app.app.models.blogDAO(connection);
 
   blogDAO.getBlog(function(error, result) {
-    response.render("blogs/posts/index", { postagem: result });
+    response.render("users/blog", { postagem: result });
   });
 }
