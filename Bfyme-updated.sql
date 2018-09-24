@@ -56,7 +56,7 @@ CREATE TABLE `t_sbfy_postagens` (
   `ds_imagem` varchar(120) DEFAULT NULL,
   `nm_titulo` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id_postagem`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -138,4 +138,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-09-21  8:27:23
+-- Dump completed on 2018-09-24  8:05:45

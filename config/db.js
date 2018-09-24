@@ -6,7 +6,7 @@ var mysql_connection = function() {
         {
             host: 'Localhost',
             user: 'root',
-            password: 'c714hj2nkq',
+            password: 'XXXX',
             database: 'bfyme'
         }
     );
