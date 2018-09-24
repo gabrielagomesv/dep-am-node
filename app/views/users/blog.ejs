@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
   <title>Bfy.me</title>
 </head>
 <body>
@@ -58,19 +60,20 @@
   <div class="container">
     <h2 class="text-center m-5 title_default">Últimas postagens</h2>
     <div class="row">
-      <div class="col-sm-8 blog-main">
+      <div class="col-sm-8 blog-main text-muted">
+      <% for(var i = 0; i < postagem.length; i++) { %>
         <div class="blog-post mb-5">
-          <h2 class="blog-post-title title_item"></h2>
-          <p class="blog-post-meta"></p>
+          <h2 class="blog-post-title title_item"><%= postagem[i].nm_titulo %></h2>
+          <p class="blog-post-meta"><%= postagem[i].nm_autor %></p>
           <hr>
-          <p></p>
-          <img src="" class="img-fluid m-3" alt="Responsive image">
+          <p><%= postagem[i].ds_postagem %></p>
           <a href="#" class="badge badge-secondary">Beleza</a>
           <a href="#" class="badge badge-secondary">Saúde</a>
           <a href="#" class="badge badge-secondary">#DicaBfyme</a>
         </div>
+      <% } %>
       </div>
-      <div class="col-sm-3 offset-sm-1 blog-sidebar">
+      <div class="col-sm-3 offset-sm-1 blog-sidebar text-secondary">
         <div class="sidebar-module sidebar-module-inset">
           <div class="card">
             <div class="card-header">
