@@ -9,7 +9,7 @@ module.exports.blog_create = function(app, request, response) {
 
   blogDAO.createPost(postagem, function(error, result) {
     response.redirect("/blog");
-  });
+  }); 
 }
 
 module.exports.blog_index = function(app, request, response) {
